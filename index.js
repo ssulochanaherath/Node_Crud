@@ -27,6 +27,8 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use(express.static("uploads"));
+
 //set template
 
 app.set("view engine", "ejs");
